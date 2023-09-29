@@ -33,25 +33,36 @@
     background-size: cover;
     height: 92vh;
   }
-
-  .divOpções{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 10rem;
-    padding: 0.5rem 0;
-    margin: 0.125rem 0 0;
-    font-size: 1rem;
-    color: #212529;
-    text-align: left;
+  
+  ul{
     list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 0.25rem;
+    background: #22438C;
+  }
+
+  ul li{
+    display: inline-block;
+    position: relative;
+  }
+
+  ul li a{
+    display: block;
+    padding: 20px, 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;  
+  }
+
+  ul li ul.dropdown li{
+    display: block;
+  }
+
+  ul li ul.dropdown{
+    width: 100%;
+    background: #22438C;
+    position: absolute;
+    z-index: 999;
+    display: none;
   }
   
   .nav-list {
